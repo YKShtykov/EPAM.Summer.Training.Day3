@@ -4,9 +4,18 @@ using Logic;
 
 namespace LogicNUnitTests
 {
+  /// <summary>
+  /// Class consists one method for NUnit testing Root calculation
+  /// </summary>
   [TestFixture]
   class NewtonRootTests
   {
+    /// <summary>
+    /// NUnit test for method calculating Root of value, various cases
+    /// </summary>
+    /// <param name="value"></param>
+    /// <param name="power"></param>
+    /// <param name="acuracy"></param>
     [TestCase(8,3,0.001)]
     [TestCase(8,1,0.001)]
     [TestCase(0,1,0.001)]

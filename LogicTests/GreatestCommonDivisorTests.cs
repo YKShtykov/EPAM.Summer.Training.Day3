@@ -5,9 +5,15 @@ using System.Diagnostics;
 
 namespace LogicTests
 {
+  /// <summary>
+  /// Class consists MS Unit tests for GreathesCommonDivisor methods
+  /// </summary>
   [TestClass]
   public class GreatestCommonDivisorTests
   {
+    /// <summary>
+    /// Simple case of EuclidianGCD with time
+    /// </summary>
     [TestMethod]
     public void EuclidianGCD_WhenInputParameters560and430_Returns10()
     {
@@ -25,6 +31,9 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
+    /// <summary>
+    /// overloaded EuclidianGCD method for three values with time
+    /// </summary>
     [TestMethod]
     public void EuclidianGCD_WhenInputParameters560and148and586_Returns2()
     {
@@ -43,7 +52,9 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
-
+    /// <summary>
+    /// overloaded EuclidianGCD method for four values with time
+    /// </summary>
     [TestMethod]
     public void EuclidianGCD_WhenInputParameters560and148and586and44_Returns2()
     {
@@ -63,6 +74,9 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
+    /// <summary>
+    /// simple EuclidianGCD method with input zero
+    /// </summary>
     [TestMethod]
     public void EuclidianGCD_WhenInputParameters0and430_Returns430()
     {
@@ -80,9 +94,11 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
+    /// <summary>
+    /// simple EuclidianGCD method with input zeros
+    /// </summary>
     [TestMethod]
     [ExpectedException(typeof(ArgumentException))]
-
     public void EuclidianGCD_WhenInputParameters0and0_Returns0()
     {
       //Arrange
@@ -95,6 +111,9 @@ namespace LogicTests
       ///Assert is handled by ExceptedException 
     }
 
+    /// <summary>
+    /// simple EuclidianGCD method with input negative values
+    /// </summary>
     [TestMethod]
     public void EuclidianGCD_WhenInputParametersMinus560andMinus148andMinus586and44_Returns2()
     {
@@ -114,6 +133,9 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
+    /// <summary>
+    /// simple ShteinGCD method with time
+    /// </summary>
     [TestMethod]
     public void ShteinGCD_WhenInputParameters18and144_Returns18()
     {
@@ -131,6 +153,9 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
+    /// <summary>
+    /// overloaded ShteinGCD method for three values with time
+    /// </summary>
     [TestMethod]
     public void ShteinGCD_WhenInputParameters18and144and586_Returns2()
     {
@@ -149,7 +174,9 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
-
+    /// <summary>
+    /// overloaded ShteinGCD method for four values with time
+    /// </summary>
     [TestMethod]
     public void ShteinGCD_WhenInputParameters18and144and586and1_Returns1()
     {
@@ -169,6 +196,9 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
+    /// <summary>
+    /// simple ShteinGCD method with input zero
+    /// </summary>
     [TestMethod]
     public void ShteinGCD_WhenInputParameters0and200_Returns200()
     {
@@ -186,6 +216,9 @@ namespace LogicTests
       Assert.AreEqual(excepted, result);
     }
 
+    /// <summary>
+    /// simple ShteinGCD method with input zeros
+    /// </summary>
     [TestMethod]
     [ExpectedException(typeof(ArgumentException))]
     public void ShteinGCD_WhenInputParameters0and0_Returns0()
