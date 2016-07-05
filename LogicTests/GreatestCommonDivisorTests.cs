@@ -75,7 +75,7 @@ namespace LogicTests
     }
 
     /// <summary>
-    /// simple EuclidianGCD method with input zero
+    /// simple EuclidianGCD method with input zero with time
     /// </summary>
     [TestMethod]
     public void EuclidianGCD_WhenInputParameters0and430_Returns430()
