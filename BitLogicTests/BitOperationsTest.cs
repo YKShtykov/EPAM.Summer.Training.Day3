@@ -18,14 +18,14 @@ namespace BitLogicTests
     /// <param name="i"></param>
     /// <param name="j"></param>
     /// <returns> Merged value</returns>
-    [TestCase(7,4,3,5,Result =39)]
+    [TestCase(7, 4, 3, 5, Result = 39)]
     [TestCase(100, 3, 3, 4, Result = 124)]
-    [TestCase(7,4,-1,6,ExpectedException =typeof(ArgumentException))]
+    [TestCase(7, 4, -1, 6, ExpectedException = typeof(ArgumentException))]
     [TestCase(7, 4, 6, -1, ExpectedException = typeof(ArgumentException))]
     [TestCase(7, 4, 6, 2, ExpectedException = typeof(ArgumentException))]
-    public int BinaryMergeTest(int value1,int value2, int i,int j)
+    public int BinaryMergeTest(int value1, int value2, int i, int j)
     {
-      return BitOperations.BinaryMerge(value1,value2,i,j);
+      return BitOperations.BinaryMerge(value1, value2, i, j);
     }
   }
 }

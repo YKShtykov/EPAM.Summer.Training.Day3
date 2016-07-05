@@ -23,7 +23,7 @@ namespace LogicNUnitTests
     [TestCase(0, 0, ExpectedException = typeof(ArgumentException))]
     public int EuclidianGCDTest(int a, int b)
     {
-      return GreatestCommonDivisor.EuclidianGCD( a, b);
+      return GreatestCommonDivisor.EuclidianGCD(a, b);
     }
 
     /// <summary>

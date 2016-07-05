@@ -228,7 +228,7 @@ namespace LogicTests
       int b = 0;
 
       //Act
-      int result = GreatestCommonDivisor.ShteinGCD( a, b);
+      int result = GreatestCommonDivisor.ShteinGCD(a, b);
 
       //Assert is handled by ExceptedException
     }

@@ -16,10 +16,10 @@ namespace LogicNUnitTests
     /// <param name="value"></param>
     /// <param name="power"></param>
     /// <param name="acuracy"></param>
-    [TestCase(8,3,0.001)]
-    [TestCase(8,1,0.001)]
-    [TestCase(0,1,0.001)]
-    [TestCase(8,1,2,ExpectedException =typeof(ArgumentException))]
+    [TestCase(8, 3, 0.001)]
+    [TestCase(8, 1, 0.001)]
+    [TestCase(0, 1, 0.001)]
+    [TestCase(8, 1, 2, ExpectedException = typeof(ArgumentException))]
     [TestCase(8, 1, -2, ExpectedException = typeof(ArgumentException))]
     [TestCase(8, 0, 0.1, ExpectedException = typeof(ArgumentException))]
     public void RootTest(double value, int power, double acuracy)

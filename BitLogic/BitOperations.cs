@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BitLogic
 {
@@ -26,17 +22,19 @@ namespace BitLogic
       {
         throw new ArgumentException("i and j must be positive");
       }
+
       if (i > j)
       {
         throw new ArgumentException("i must be less than j");
       }
 
       int length = 8 * sizeof(int);
-      int temp = 0;
+      int result = 0;
       int[] tempArr = new int[length];
+
       for (int k = 0; k < length; k++)
       {
-        if ((k >= i) && (k <= j))
+        if (k >= i && k <= j)
         {
           tempArr[k] = value2 % 2;
           value2 = value2 >> 1;
@@ -45,16 +43,16 @@ namespace BitLogic
         {
           tempArr[k] = value1 % 2;
         }
+
         value1 = value1 >> 1;
       }
 
       for (int k = 0; k < length; k++)
       {
-        temp = temp + ((int)Math.Pow(2, k)) * tempArr[k];
+        result = result + (int)Math.Pow(2, k) * tempArr[k];
       }
 
-
-      return temp;
+      return result;
     }
   }
 }
