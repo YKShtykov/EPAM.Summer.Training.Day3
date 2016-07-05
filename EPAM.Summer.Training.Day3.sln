@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicTests", "LogicTests\Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicNUnitTests", "LogicNUnitTests\LogicNUnitTests.csproj", "{41279AD7-A266-4808-A7BB-6D6AEBF2592C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitLogicTests", "BitLogicTests\BitLogicTests.csproj", "{ABEA296E-32FF-45B2-BAA6-6AB8CBDA115D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitLogic", "BitLogic\BitLogic.csproj", "{E8A74958-192D-4C6A-9071-F3995FA6E902}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{41279AD7-A266-4808-A7BB-6D6AEBF2592C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41279AD7-A266-4808-A7BB-6D6AEBF2592C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41279AD7-A266-4808-A7BB-6D6AEBF2592C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEA296E-32FF-45B2-BAA6-6AB8CBDA115D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEA296E-32FF-45B2-BAA6-6AB8CBDA115D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEA296E-32FF-45B2-BAA6-6AB8CBDA115D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEA296E-32FF-45B2-BAA6-6AB8CBDA115D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A74958-192D-4C6A-9071-F3995FA6E902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A74958-192D-4C6A-9071-F3995FA6E902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A74958-192D-4C6A-9071-F3995FA6E902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A74958-192D-4C6A-9071-F3995FA6E902}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

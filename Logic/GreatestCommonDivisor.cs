@@ -16,6 +16,7 @@ namespace Logic
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns>int the greatest common divisor</returns>
+    ///  <exception>ArgumentException</exception>
     public static int EuclidianGCD(int a, int b)
     {
       int rest = 0;
@@ -62,6 +63,7 @@ namespace Logic
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns>int the greatest common divisor</returns>
+    /// <exception>ArgumentException</exception>
     public static int EuclidianGCD(int a, int b, int c)
     {
       return EuclidianGCD(EuclidianGCD(a, b), c);
@@ -74,6 +76,7 @@ namespace Logic
     /// <param name="b"></param>
     /// <param name="arr"></param>
     /// <returns> int the greatest common divisor </returns>
+    /// <exception>ArgumentException</exception>
     public static int EuclidianGCD(int a, int b, params int[] arr)
     {
       var result = EuclidianGCD(a, b);
@@ -98,6 +101,7 @@ namespace Logic
     /// <param name="b"></param>
     /// <param name="time"></param>
     /// <returns> GCD of two numbers and time </returns>
+    /// <exception>ArgumentException</exception>
     public static int EuclidianGCD(out long time, int a, int b)
     {
       Stopwatch stopwatch = new Stopwatch();
@@ -119,6 +123,7 @@ namespace Logic
     /// <param name="c"></param>
     /// <param name="time"></param>
     /// <returns> GCD of three numbers and time </returns>
+    /// <exception>ArgumentException</exception>
     public static int EuclidianGCD(out long time, int a, int b, int c)
     {
       Stopwatch stopwatch = new Stopwatch();
@@ -140,6 +145,7 @@ namespace Logic
     /// <param name="c"></param>
     /// <param name="time"></param>
     /// <returns> GCD of more than three numbers and time </returns>
+    /// <exception>ArgumentException</exception>
     public static int EuclidianGCD(out long time, int a, int b, params int[] arr)
     {
       Stopwatch stopwatch = new Stopwatch();
@@ -161,6 +167,7 @@ namespace Logic
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns> int the greatest common divisor of two values  </returns>
+    /// <exception>ArgumentException</exception>
     public static int ShteinGCD(int a, int b)
     {
       if (a == b)
@@ -218,6 +225,7 @@ namespace Logic
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns> int the greatest common divisor of three values </returns>
+    /// <exception>ArgumentException</exception>
     public static int ShteinGCD(int a, int b, int c)
     {
       return ShteinGCD(ShteinGCD(a, b), c);
@@ -229,6 +237,7 @@ namespace Logic
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns> int the greatest common divisor </returns>
+    /// <exception>ArgumentException</exception>
     public static int ShteinGCD(int a, int b, params int[] arr)
     {
       var result = ShteinGCD(a, b);
@@ -252,6 +261,7 @@ namespace Logic
     /// <param name="b"></param>
     /// <param name="time"></param>
     /// <returns> GCD of two numbers and time </returns>
+    /// <exception>ArgumentException</exception>
     public static int ShteinGCD(out long time, int a, int b)
     {
       Stopwatch stopwatch = new Stopwatch();
@@ -272,6 +282,7 @@ namespace Logic
     /// <param name="b"></param>
     /// <param name="time"></param>
     /// <returns> GCD of three numbers and time </returns>
+    /// <exception>ArgumentException</exception>
     public static int ShteinGCD(out long time, int a, int b, int c)
     {
       Stopwatch stopwatch = new Stopwatch();
@@ -293,6 +304,7 @@ namespace Logic
     /// <param name="c"></param>
     /// <param name="time"></param>
     /// <returns> GCD of more than three numbers and time </returns>
+    /// <exception>ArgumentException</exception>
     public static int ShteinGCD(out long time, int a, int b, params int[] arr)
     {
       Stopwatch stopwatch = new Stopwatch();

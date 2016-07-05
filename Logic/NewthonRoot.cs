@@ -14,6 +14,7 @@ namespace Logic
     /// <param name="power"></param>
     /// <param name="acuracy"></param>
     /// <returns> Root of the value </returns>
+    /// <exception>ArgumentException</exception>
     public static double Root(double value, int power, double acuracy = 0.001) 
     {
       if (acuracy > 1 || acuracy < 0)

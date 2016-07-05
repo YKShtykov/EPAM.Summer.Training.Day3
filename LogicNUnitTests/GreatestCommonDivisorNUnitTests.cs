@@ -14,8 +14,8 @@ namespace LogicNUnitTests
     /// <summary>
     /// Test for simple EuclidianGCD method, various cases
     /// </summary>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
+    /// <param name="int a"></param>
+    /// <param name="int b"></param>
     /// <returns></returns>
     [TestCase(8, 10, Result = 2)]
     [TestCase(0, 10, Result = 10)]
@@ -29,8 +29,9 @@ namespace LogicNUnitTests
     /// <summary>
     /// Test for overloaded EuclidianGCD method with three parameters, various cases
     /// </summary>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
+    /// <param name="int a"></param>
+    /// <param name="int b"></param>
+    /// <param name="int c"></param>
     /// <returns></returns>
     [TestCase(58, 100, 566, Result = 2)]
     [TestCase(0, 100, 0, Result = 100)]
@@ -44,8 +45,8 @@ namespace LogicNUnitTests
     /// <summary>
     /// Test for simple ShteinGCD method, various cases
     /// </summary>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
+    /// <param name="int a"></param>
+    /// <param name="int b"></param>
     /// <returns></returns>
     [TestCase(58, 100, Result = 2)]
     [TestCase(0, 100, Result = 100)]
@@ -58,8 +59,10 @@ namespace LogicNUnitTests
     /// <summary>
     /// Test for overloaded ShteinGCD method with four paramethers, various cases
     /// </summary>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
+    /// <param name="int a"></param>
+    /// <param name="int b"></param>
+    /// <param name="int c"></param>
+    /// <param name="int d"></param>
     /// <returns></returns>
     [TestCase(66, 244, 164, 1100, Result = 2)]
     [TestCase(0, 100, 50, 0, Result = 50)]
