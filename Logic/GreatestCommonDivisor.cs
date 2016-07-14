@@ -6,8 +6,22 @@ namespace Logic
   /// <summary>
   /// Class consists methods to find the greatest common divisor
   /// </summary>
-  public static class GreatestCommonDivisor
+  public class GreatestCommonDivisor
   {
+    private static int GetTime(out long time, Func<int> gcdFunc)
+    {
+      Stopwatch stopwatch = new Stopwatch();
+      stopwatch.Start();
+
+      int result = gcdFunc();
+
+      stopwatch.Stop();
+
+      time = stopwatch.ElapsedTicks;
+
+      return result;
+    }
+
     #region EuclidianGCD
 
     /// <summary>
@@ -104,15 +118,7 @@ namespace Logic
     /// <exception>ArgumentException</exception>
     public static int EuclidianGCD(out long time, int a, int b)
     {
-      Stopwatch stopwatch = new Stopwatch();
-
-      stopwatch.Start();
-      int result = EuclidianGCD(a, b);
-      stopwatch.Stop();
-
-      time = stopwatch.ElapsedTicks;
-
-      return result;
+      return GetTime(out time, () => { return EuclidianGCD(a, b); });
     }
 
     /// <summary>
@@ -126,15 +132,7 @@ namespace Logic
     /// <exception>ArgumentException</exception>
     public static int EuclidianGCD(out long time, int a, int b, int c)
     {
-      Stopwatch stopwatch = new Stopwatch();
-
-      stopwatch.Start();
-      int result = EuclidianGCD(a, b, c);
-      stopwatch.Stop();
-
-      time = stopwatch.ElapsedTicks;
-
-      return result;
+      return GetTime(out time, () => { return EuclidianGCD(a, b, c); });
     }
 
     /// <summary>
@@ -148,15 +146,7 @@ namespace Logic
     /// <exception>ArgumentException</exception>
     public static int EuclidianGCD(out long time, int a, int b, params int[] arr)
     {
-      Stopwatch stopwatch = new Stopwatch();
-
-      stopwatch.Start();
-      int result = EuclidianGCD(a, b, arr);
-      stopwatch.Stop();
-
-      time = stopwatch.ElapsedTicks;
-
-      return result;
+      return GetTime(out time, () => { return EuclidianGCD(a, b, arr); });
     }
     #endregion
 
@@ -264,15 +254,7 @@ namespace Logic
     /// <exception>ArgumentException</exception>
     public static int ShteinGCD(out long time, int a, int b)
     {
-      Stopwatch stopwatch = new Stopwatch();
-
-      stopwatch.Start();
-      int result = ShteinGCD(a, b);
-      stopwatch.Stop();
-
-      time = stopwatch.ElapsedTicks;
-
-      return result;
+      return GetTime(out time, () => { return ShteinGCD(a, b); });
     }
 
     /// <summary>
@@ -285,15 +267,7 @@ namespace Logic
     /// <exception>ArgumentException</exception>
     public static int ShteinGCD(out long time, int a, int b, int c)
     {
-      Stopwatch stopwatch = new Stopwatch();
-
-      stopwatch.Start();
-      int result = ShteinGCD(a, b, c);
-      stopwatch.Stop();
-
-      time = stopwatch.ElapsedTicks;
-
-      return result;
+      return GetTime(out time, () => { return ShteinGCD(a, b, c); });
     }
 
     /// <summary>
@@ -307,15 +281,7 @@ namespace Logic
     /// <exception>ArgumentException</exception>
     public static int ShteinGCD(out long time, int a, int b, params int[] arr)
     {
-      Stopwatch stopwatch = new Stopwatch();
-
-      stopwatch.Start();
-      int result = ShteinGCD(a, b, arr);
-      stopwatch.Stop();
-
-      time = stopwatch.ElapsedTicks;
-
-      return result;
+      return GetTime(out time, () => { return ShteinGCD(a, b, arr); });
     }
     #endregion
 
